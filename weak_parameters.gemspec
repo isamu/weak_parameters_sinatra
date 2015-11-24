@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "weak_parameters/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "weak_parameters"
+  spec.name          = "weak_parameters_sinatra"
   spec.version       = WeakParameters::VERSION
-  spec.authors       = ["Ryo Nakamura"]
-  spec.email         = ["r7kamura@gmail.com"]
-  spec.summary       = "Add a validation filter to your controller."
-  spec.homepage      = "https://github.com/r7kamura/weak_parameters"
+  spec.authors       = ["Isamu Arimoto"]
+  spec.email         = ["isamu.a@gmail.com"]
+  spec.summary       = "Add a validation filter to your sinatra app."
+  spec.homepage      = "https://github.com/isamu/weak_parameters_sinatra"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -17,7 +17,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "rails", ">= 3.2.11"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "sqlite3"

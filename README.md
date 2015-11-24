@@ -1,9 +1,10 @@
 # WeakParameters
 Validates `params` in your sinatra app.
+This is forked from weak_parameters.
 
 ## Installation
 ```ruby
-gem "weak_parameters"
+gem "weak_parameters_sinatra"
 ```
 
 ## Usage
